@@ -36,20 +36,19 @@ class PessoaSeeder extends Seeder
 
         Pessoa::create([
             "nome" => "Joao",
-            "dataNascimento" => Carbon::parse('2000-01-01'),
-            "cpf" => "12345678901",
+            "dataNascimento" => Carbon::parse('1990-01-01'),
+            "cpf" => "15245678901",
             "rg" => "2617311",
             "perfilId" => 1,
         ]);
 
         Pessoa::create([
             "nome" => "Miguel",
-            "dataNascimento" => Carbon::parse('2000-01-01'),
-            "cpf" => "12455678901",
+            "dataNascimento" => Carbon::parse('2003-03-02'),
+            "cpf" => "43455678901",
             "rg" => "2613311",
             "perfilId" => 2,
         ]);
-
         PessoaAplicativo::create([
             "pessoaId" => 1,
             "aplicativoId" => 1,

@@ -13,7 +13,7 @@ class CreatePessoaAplicativosTable extends Migration
      */
     public function up()
     {
-        Schema::create('pessoa__aplicativos', function (Blueprint $table) {
+        Schema::create('pessoa_aplicativos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('pessoaId')->unsigned();
             $table->integer('aplicativoId')->unsigned();

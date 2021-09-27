@@ -14,6 +14,6 @@ class PessoaAplicativoSeeder extends Seeder
      */
     public function run()
     {
-    
+   
     }
 }
