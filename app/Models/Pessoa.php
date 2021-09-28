@@ -18,7 +18,7 @@ class Pessoa extends Model
 
     public function aplicativo()
     {
-        return $this->hasMany(Pessoa_Aplicativo::class,"pessoaId","id");
+        return $this->hasMany(PessoaAplicativo::class,"pessoaId","id");
     }
 
 }

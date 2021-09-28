@@ -36,11 +36,21 @@ class AplicativoController extends Controller
             "nome" => "required",
             "bundleID" => "required",  
         ]);
-        $aplicativo->Aplicativo::update([
+        $aplicativo->update([
             "nome" => $request -> nome,
             "bundleID" => $request -> bundleID,
         ]);
 
         return response()->json($aplicativo);
     }
+
+    public function destroy($id)
+    {
+  
+        $aplicativo = Aplicativo::where('id', $id)->delete();
+        return response()->json($aplicativo);
+    }
+
+
+
 }

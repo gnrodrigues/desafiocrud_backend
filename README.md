@@ -1,12 +1,31 @@
+
+# Desafio crud
+
+## Instalação
+
+1. Instalação
+```bash
 composer global require laravel/installer
+```
 
-php artisan serve - rodar projeto local
+2. Rodar projeto local
 
-Rodar um servidor local MySQL exemplo (MAMP, WampServer, XAMPP ) - para desevolvimento foi usado MAMP
+```bash
+php artisan serve
+```
 
-criar um database no servidor MySQL chamado desafiocrud de acordo com .env DB_DATABASE=desafiocrud
+3. Rodar um servidor local MySQL exemplo (MAMP, WampServer, XAMPP ) - para desevolvimento foi usado MAMP
 
-php artisan migrate - criar tabelas no banco de dados
+4. Criar um database no servidor MySQL chamado desafiocrud de acordo com .env DB_DATABASE=desafiocrud
 
-php artisan db:seedphp - inserir dados nas tabelas com devidos relacionamentos
+5. Criar tabelas no banco de dados
 
+```bash
+php artisan migrate
+```
+
+5. Inserir dados nas tabelas com devidos relacionamentos
+
+```bash
+php artisan db:seedphp 
+```

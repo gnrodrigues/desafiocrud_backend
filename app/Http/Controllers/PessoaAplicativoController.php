@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 
 class PessoaAplicativoController extends Controller
 {
+
+
+    public function index()
+    {
+        $pessoas = PessoaAplicativo::all();
+        return response()->json($pessoas);
+    }
+
+
     public function store(Request $request)
     {
         $request->validate([

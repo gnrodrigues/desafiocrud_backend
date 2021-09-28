@@ -28,6 +28,6 @@ class CreatePessoaAplicativosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pessoa__aplicativos');
+        Schema::dropIfExists('pessoa_aplicativos');
     }
 }

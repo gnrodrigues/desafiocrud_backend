@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class PessoaAplicativo extends Model
 {
+
+    protected $fillable = ['pessoaId','aplicativoId'];
+
     public function pessoa(){
         return $this->hasMany(Pessoa::class,"pessoaId","id");
   }

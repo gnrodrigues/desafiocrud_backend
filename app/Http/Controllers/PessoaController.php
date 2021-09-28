@@ -17,10 +17,12 @@ class PessoaController extends Controller
     {
         $pessoas = Pessoa::where('id',$id)->first();
         $perfil = $pessoas->perfil()->first();
+        $aplicativo = $pessoas->aplicativo()->first();
         if($pessoas){
             echo "<p>Nome: {$pessoas->nome}</p>";
         }
         if($perfil){
+            echo "<p>Aplicativo: {$aplicativo}</p>";
             echo "<p>Nome: {$perfil->perfil}</p>";
         }
     }

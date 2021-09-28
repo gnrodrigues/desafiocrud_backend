@@ -3,6 +3,7 @@
 use App\Http\Controllers\AplicativoController;
 use App\Http\Controllers\PessoaAplicativoController;
 use App\Http\Controllers\PessoaController;
+use App\Models\Aplicativo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('pessoas', PessoaController::class);
 Route::apiResource('aplicativos', AplicativoController::class);
-Route::post('pessoa_aplicativos', 'PessoaAplicativoController@store');
+Route::delete('/aplicativos/{id}', [AplicativoController::class, 'destroy']);
+//Route::apiResource('pessoa_aplicativos', PessoaAplicativoController::class);
+Route::post('pessoa_aplicativos', [PessoaAplicativoController::class, 'store']);
