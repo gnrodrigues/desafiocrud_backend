@@ -24,7 +24,7 @@ php artisan serve
 php artisan migrate
 ```
 
-5. Inserir dados nas tabelas com devidos relacionamentos
+6. Inserir dados nas tabelas com devidos relacionamentos
 
 ```bash
 php artisan db:seedphp 
